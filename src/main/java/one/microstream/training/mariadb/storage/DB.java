@@ -7,7 +7,6 @@ import io.micronaut.core.io.ResourceResolver;
 import io.micronaut.core.io.scan.ClassPathResourceLoader;
 import one.microstream.storage.embedded.configuration.types.EmbeddedStorageConfiguration;
 import one.microstream.storage.embedded.types.EmbeddedStorageManager;
-import one.microstream.training.mariadb.utils.MockupUtils;
 
 
 public class DB
@@ -22,11 +21,5 @@ public class DB
 		
 		storageManager = EmbeddedStorageConfiguration.load(
 			resource.get().getPath()).createEmbeddedStorageFoundation().createEmbeddedStorageManager(root).start();
-	}
-	
-	public static void initializeDB()
-	{
-		root.setBookList(MockupUtils.loadMockupData());
-		DB.storageManager.storeRoot();
 	}
 }

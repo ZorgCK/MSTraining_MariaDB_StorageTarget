@@ -1,6 +1,6 @@
 <properties>
     <property name="storage-filesystem.sql.mariadb.data-source-provider" value = "one.microstream.training.mariadb.storage.DataSourceProvider" />
-    <property name="storage-filesystem.sql.mariadb.url" value = "jdbc:mysql://127.0.0.1:3306/microstream" />
+    <property name="storage-filesystem.sql.mariadb.url" value = "jdbc:mysql://127.0.0.1:3333/microstream" />
     <property name="storage-filesystem.sql.mariadb.user" value = "root" />
-    <property name="storage-filesystem.sql.mariadb.password" value="OeLiM8w2pGf951j2yZUP" />
+    <property name="storage-filesystem.sql.mariadb.password" value="root" />
 </properties>
